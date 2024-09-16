@@ -1,0 +1,60 @@
+there is a mistake in the last problem in the Day2 [ same input and Output]
+
+/*
+Problem 6: Generate Hierarchical Employee-Manager Map
+Question: Generate a hierarchical map that lists employees under their respective managers.
+def employees = [
+    "CEO": [
+        "VP1": [
+            "Manager1": ["Employee1", "Employee2"],
+            "Manager2": ["Employee3"]
+        ],
+        "VP2": [
+            "Manager3": ["Employee4", "Employee5"],
+            "Manager4": ["Employee6"]
+        ]
+    ]
+]
+
+Expected Output:
+[
+    "CEO": [
+        "VP1": [
+            "Manager1": ["Employee1", "Employee2"],
+            "Manager2": ["Employee3"]
+        ],
+        "VP2": [
+            "Manager3": ["Employee4", "Employee5"],
+            "Manager4": ["Employee6"]
+        ]
+    ]
+]
+
+*/
+
+
+/********* so i changed the question **********/
+
+input :
+def relationships = [
+    "CEO" : ["VP1", "VP2"],            
+    "VP1" : ["Manager1", "Manager2"],   
+    "VP2" : ["Manager3", "Manager4"],   
+    "Manager1" : ["Employee1", "Employee2"], 
+    "Manager2" : ["Employee3"],         
+    "Manager3" : ["Employee4", "Employee5"], 
+    "Manager4": ["Employee6"]          
+]
+
+output :[
+    "CEO": [
+        "VP1": [
+            "Manager1": ["Employee1", "Employee2"],
+            "Manager2": ["Employee3"]
+        ],
+        "VP2": [
+            "Manager3": ["Employee4", "Employee5"],
+            "Manager4": ["Employee6"]
+        ]
+    ]
+]
