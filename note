@@ -58,3 +58,11 @@ output :[
         ]
     ]
 ]
+
+
+*************************************************************************************************************************************
+
+For date and time in groovy 
+    - we are using Date class
+    - we are using Year class
+    - we are using LocalDate class
