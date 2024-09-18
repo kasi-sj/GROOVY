@@ -63,6 +63,8 @@ output :[
 *************************************************************************************************************************************
 
 For date and time in groovy 
-    - we are using Date class
-    - we are using Year class
-    - we are using LocalDate class
+    - we are using Date class for formatting the date
+    - we are using Year class to find wether the year is leap year or not
+    - we are using LocalDate class to minus the days from the current date
+    - we use Period class to calculate the difference between two dates
+    - we use GregorianCalendar class to find the easter day of the year
